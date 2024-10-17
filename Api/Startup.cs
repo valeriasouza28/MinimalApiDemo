@@ -28,14 +28,10 @@ public class Startup
     {
         Configuration = configuration;
         key = Configuration["Jwt:Key"] ?? throw new ArgumentNullException("Jwt:Key");
-        // issuer = Configuration["Jwt:Issuer"] ?? throw new ArgumentNullException("Jwt:Issuer");
-        // audience = Configuration["Jwt:Audience"] ?? throw new ArgumentNullException("Jwt:Audience");
-    
+        issuer = Configuration["Jwt:Issuer"] ?? throw new ArgumentNullException("Jwt:Issuer");
+        audience = Configuration["Jwt:Audience"] ?? throw new ArgumentNullException("Jwt:Audience");    
+       
     }
-
-    // private string key = "";
-    // private string issuer = "";
-    // private string audience = "";
 
     public IConfiguration Configuration { get;set; } = default!;
 
@@ -48,10 +44,10 @@ public class Startup
             option.TokenValidationParameters = new TokenValidationParameters{
                 ValidateLifetime = true,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
-                ValidateIssuer = false,
-                // ValidIssuer = issuer,
-                ValidateAudience = false,
-                // ValidAudience = audience
+                ValidateIssuer = true,
+                ValidIssuer = issuer,
+                ValidateAudience = true,
+                ValidAudience = audience
             };
         });
 
@@ -142,6 +138,8 @@ public class Startup
                 };
                 
                 var token = new JwtSecurityToken(
+                    issuer: issuer,
+                    audience: audience,
                     claims: claims,
                     expires: DateTime.Now.AddDays(1),
                     signingCredentials: credentials
