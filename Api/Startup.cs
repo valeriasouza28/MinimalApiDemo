@@ -37,6 +37,18 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+
+        services.AddCors(options =>
+            {
+                options.AddPolicy("MyCorsPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins("https://exemplo.com", "https://outro-exemplo.com") // Substitua pelas suas URLs
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
+            
         services.AddAuthentication(option => {
             option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
