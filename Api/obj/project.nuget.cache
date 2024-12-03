@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Lz8w63TkCo=",
+  "dgSpecHash": "C4U4/hcwrYI=",
   "success": true,
-  "projectFilePath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Api/MinimalApiDemo.csproj",
+  "projectFilePath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Api/MinimalApiDemo.csproj",
   "expectedPackageFiles": [
     "/home/valeria/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/valeria/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

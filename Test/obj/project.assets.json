@@ -4423,11 +4423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Test/Test.csproj",
+      "projectUniqueName": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Test/Test.csproj",
       "projectName": "Test",
-      "projectPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Test/Test.csproj",
+      "projectPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Test/Test.csproj",
       "packagesPath": "/home/valeria/.nuget/packages/",
-      "outputPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Test/obj/",
+      "outputPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/valeria/.nuget/NuGet/NuGet.Config"
@@ -4443,8 +4443,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Api/MinimalApiDemo.csproj": {
-              "projectPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/teste4/MinimalApiDemo/Api/MinimalApiDemo.csproj"
+            "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Api/MinimalApiDemo.csproj": {
+              "projectPath": "/home/valeria/ProjetosProgramacao/Dotnet/Dio-XpIncFullStack/05-construindoApisComDotnetCSharp/testes/AplicacaoFuncional/MinimalApiDemo/Api/MinimalApiDemo.csproj"
             }
           }
         }

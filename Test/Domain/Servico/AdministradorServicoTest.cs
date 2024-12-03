@@ -17,7 +17,7 @@ public class AdministradorServicoTest
 
         var builder = new ConfigurationBuilder()
             .SetBasePath(path ?? Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile("appsettings.Test.json", optional: false, reloadOnChange: true)
             .AddEnvironmentVariables();
 
         var configuration = builder.Build();
@@ -72,4 +72,14 @@ public class AdministradorServicoTest
         Assert.IsNotNull(admDoBanco); // Verifique se o administrador não é nulo
         Assert.AreEqual(1, admDoBanco?.Id);
     }
+
+    [TestMethod]
+public void TestandoConexaoComBancoDeTeste()
+{
+    var context = CriarContextoDeTeste();
+    var connectionString = context.Database.GetDbConnection().ConnectionString;
+
+    Assert.IsTrue(connectionString.Contains("minimalapi_test"));
+}
+
 }
