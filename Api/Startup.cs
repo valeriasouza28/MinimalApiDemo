@@ -43,7 +43,7 @@ public class Startup
                 options.AddPolicy("MyCorsPolicy",
                     builder =>
                     {
-                        builder.WithOrigins("https://exemplo.com", "https://outro-exemplo.com") // Substitua pelas suas URLs
+                        builder.WithOrigins() // Substitua pelas suas URLs
                             .AllowAnyMethod()
                             .AllowAnyHeader();
                     });
